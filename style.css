@@ -1,0 +1,335 @@
+/* -------------------Common styles------------------- */
+header{
+    margin-top: 3em;
+    margin-left: 7em;
+    margin-right: 7em;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin-left: 7em;
+    margin-right: 7em;  
+}
+h1{
+    font-family: 'Poppins';
+    font-size: 50px;
+    color: #3A3A3A;
+    margin: 0;
+}
+h2{
+    font-family: 'Poppins';
+    font-size: 28px;
+    color: #18191F;
+}
+h3{
+    font-family: 'Poppins';
+    font-size: 24px;
+    color: #3A3A3A;
+}
+p{
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #3b3b3be8;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+    padding-right: 2em;
+    color: #3b3b3be8;
+}
+.Box{
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
+    justify-content: space-between;
+}
+.Button-box{
+    margin-top: 35px;
+}
+.Button{
+    font-family: sans-serif;
+    font-weight: 600;
+    background-color: #E02C6D;
+    padding: 12px 30px;
+    border-radius: 39px;
+    color: white;
+}
+.Unboxed-button{
+    display: flex;
+    margin-top: 35px;
+    padding: 20px 30px;
+    justify-content: flex-end;
+}
+.Unboxed-button a{
+    color: #E02C6D;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 1s ease-in-out;
+}
+.price{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+.P-des{
+    text-align: left;
+}
+.Ratings{
+    color: #FB8200;
+}
+.icon{
+    font-size: 18px;
+    color: #D9DBE1;
+    margin: 0 .35em;
+    padding: .35em;
+    background-color: #19172c;
+    border-radius: 50%;
+}
+/* Common styles */
+
+
+/* ----------------------Specific styles---------------------- */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Box-1 img{
+    background-image: url(images/Circle\ design.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3em;
+}
+.Stores{
+    margin-top: 3em;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: rgba(209, 206, 206, 0.925);
+}
+.Popular{
+    margin-top: 5em;
+    text-align: center;
+    align-items: center;
+}
+.Collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 3em;
+    justify-items: center;
+    padding-top: 20px;
+    border-radius: 10px;   
+}
+.Products{
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px grey;
+    transition: all .5s;
+}
+.Loyalty{
+    margin-top: 5em;
+    gap: 3em;
+    margin-left: 1em;
+    position: relative;
+    display: flex;
+}
+.Loyalty-details{
+    position: absolute;
+    top: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 3px 11px 0 10px;
+    width: max-content;
+    background-color: #3a3a3ab9;
+    display: none;
+}
+.Loyalty-details h1{
+    color: #ffffff;
+}
+.Loyalty img{
+    border-radius: 10px;
+}
+footer{
+    margin-top: 80px;
+    text-align: center;
+    height: 239px;
+    background: #0A0826;
+}
+footer h3{
+    font-size: 21px;
+    color: #d9dbe1fb;
+    margin: 0;
+    padding: 0;
+}
+footer p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #d2d4daf3;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.Copy-right{
+    Padding-top: 59px;
+}
+.Follow{
+    margin-top: 25px;
+}
+/* Specific styles */
+
+
+ /* ------------------------Animation------------------------ */
+ .Camera img{
+    transition: transform 1s;
+}
+.Camera:hover img{
+    transform: scale(1.08);
+}
+.Unboxed-button a:hover{
+    background-color: #E02C6D;
+    color: white;
+    padding: 0 30px;
+    border-radius: 39px;
+}
+.Button-box:hover a{
+    background-color: #e02c6eec;
+}
+.Products:hover{
+    transform: scale(1.05);
+}
+.Reward:hover .Loyalty-details{
+    display: block;
+}
+/* Animation */
+
+
+/* -------------------------Mobile view--------------------------- */
+@media only screen and (min-width: 360px) and (max-width: 720px) {
+    header{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1.35em;
+        display: flex;
+        justify-content: center;
+    }
+    main{
+        margin: 0;
+    }
+    .Menu{
+        display: none;
+    }
+    .Box{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .Journey{
+        margin-left: 14px;
+        text-align: center;
+    }
+    .Camera{
+        justify-content: center;
+    }
+    .Camera img{
+        width: 14em;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .Stores{
+        display: none;
+    }
+    .Collection{
+        display: grid;
+        grid-template-columns: none;
+        justify-content: center;
+    }
+    .Box-1 img{
+        border-radius: 50%;
+    }
+    .Loyalty{
+        text-align: center;
+        margin-top: 35px;
+        margin-left: 14px;
+        margin-right: 14px;
+        flex-direction: column-reverse; 
+    }
+    .Loyalty img{
+        width: 90%;
+    }
+    .Loyalty:hover .Loyalty-details{
+        display: none;
+    }
+}
+/* Mobile view */
+
+/* -------------------Tablet view----------------- */
+@media only screen and (min-width: 720px) and (max-width: 1080px){
+    header{
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Menu{
+        display: flex;
+    }
+    .Menu a{
+        padding: .35em;
+    }
+    main{
+        margin: 0;
+    }
+    .Journey{
+        margin-left: 5em;  
+    }
+    .Box-1{
+        margin-top: 3em;
+    }
+    .Box-1 img{
+        padding: 1em;
+        border-radius: 50%;
+    }
+    .Camera img{
+        width: 18em;
+        margin-right: 3em;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .Stores{
+        flex-wrap: wrap;
+        margin: 5em;
+    }
+    .Collection{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-self: center;
+    }
+    .Unboxed-button{
+        margin-top: 0;
+        margin-bottom: 5em;
+    }
+    .Loyalty{
+        margin-top: 35px;
+        margin-left: 3em;
+        margin-right: 3em;  
+    }
+    .Loyalty h2{
+        margin: 0;
+        padding: 0;
+    }
+    .Loyalty img{
+        width: 21em;
+    }
+    .Loyalty:hover .Loyalty-details{
+        display: none;
+    }
+}
+/* Tablet view */
